@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Vishaal RGS</title>
+  <link rel="stylesheet" href="procoder.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo"><span>Vishaal RGS</span></div>
+      <div class="links">
+        <div class="link"><a href="vishaalportfolio.html">Home</a></div>
+        <div class="link"><a href="about.html">About</a></div>
+        <div class="link"><a href="skills.html">Skills</a></div>
+        <div class="link"><a href="projects.html">Projects</a></div>
+        <div class="link contact-btn"><a href="contact.html">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="vishaalportfolio.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="projects-section">
+    <div class="main-container">
+      <div class="content">
+        <h1>My Projects</h1>
+        <div class="project-list">
+          <div class="project-item">
+            <h2>Personal Portfolio Website</h2>
+            <p>A responsive website built using HTML, CSS, JavaScript to showcase my profile, skills, and work.</p>
+          </div>
+          <div class="project-item">
+            <h2>Predictive Maintenance in Freight Transportation: Image-Based Fault Detection in Trains</h2>
+            <p>
+              • Developed an AI-driven system for train fault detection using the VisionTransformer (ViT) algorithm, achieving 95% accuracy.<br>
+              • Implemented predictive maintenance, improving early fault detection by 25%.<br>
+              
+              <em>Duration: 12/2023 – 04/2024</em>
+            </p>
+          </div>
+          <div class="project-item">
+            <h2>Library Management System</h2>
+            <p>
+              • Developed an online library management system, improving operational efficiency by 40%.<br>
+              • Implemented key features, including book search, user management, and automated fine calculation.<br>
+              <em>Duration: 05/2023 – 06/2023</em>
+            </p>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function hamburg() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>

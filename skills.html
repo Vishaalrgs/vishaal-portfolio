@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Vishaal RGS</title>
+  <link rel="stylesheet" href="procoder.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  <style>
+    .skills-section {
+      padding: 50px 20px;
+      background-color: #fff3da;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .skills-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .skills-section h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skills-list li {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      color: #444;
+    }
+
+    .skills-list li i {
+      margin-right: 10px;
+      color: #007bff;
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo"><span>Vishaal RGS</span></div>
+      <div class="links">
+        <div class="link"><a href="vishaalportfolio.html">Home</a></div>
+        <div class="link"><a href="about.html">About</a></div>
+        <div class="link"><a href="skills.html">Skills</a></div>
+        <div class="link"><a href="projects.html">Projects</a></div>
+        <div class="link contact-btn"><a href="contact.html">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="vishaalportfolio.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="skills-section">
+    <div class="main-container skills-container">
+      <div class="content">
+        <h1>My Skills</h1>
+        <ul class="skills-list">
+          <li><i class="fa-solid fa-code"></i> <strong>Languages:</strong> Java, JavaScript</li>
+          <li><i class="fa-solid fa-globe"></i> <strong>Web:</strong> HTML, CSS, Bootstrap</li>
+          <li><i class="fa-solid fa-cubes"></i> <strong>Frameworks:</strong> Spring Boot</li>
+          <li><i class="fa-solid fa-database"></i> <strong>Database:</strong> MySQL</li>
+          <li><i class="fa-solid fa-toolbox"></i> <strong>Tools:</strong> Git, VS Code, IntelliJ IDEA</li>
+          <li><i class="fa-solid fa-people-group"></i> <strong>Soft Skills:</strong> Communication, Problem Solving, Teamwork</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    function hamburg() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+      const navbar = document.querySelector(".dropdown");
+      navbar.style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>

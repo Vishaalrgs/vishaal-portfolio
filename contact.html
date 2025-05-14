@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Vishaal RGS</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Contact Me</h1>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Name</label>
+          <input type="text" id="name" name="from_name" required placeholder="Your Name" />
+          <small></small>
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="from_email" required placeholder="Your Email" />
+          <small></small>
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+          <small></small>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("hAn_9Fm2Ut7VToMIV"); // Your public key
+  </script>
+
+  <!-- Contact Form Logic -->
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Vishaal RGS</title>
+    <link rel="stylesheet" href="procoder.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span>Vishaal RGS</span></div>
+            <div class="links">
+                <div class="link"><a href="vishaalportfolio.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="skills.html">Skills</a></div>
+                <div class="link"><a href="projects.html">Projects</a></div>
+                <div class="link contact-btn"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="vishaalportfolio.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="main-container about-container">
+            <div class="image">
+                <img src="vishaal edit.jpeg" alt="Vishaal RGS">
+            </div>
+            <div class="content">
+                <h1>About Me</h1>
+                <p>Hello! I'm <strong>Vishaal RGS</strong>, a passionate Computer Science Engineering graduate from Vel Tech Multi Tech Engineering College, Chennai. I have hands-on experience with Java, Spring Boot, MySQL, HTML, CSS, and JavaScript through an internship at Eagle IT Solutions and a full-stack course at Greens Technology.</p>
+                <p>I'm enthusiastic about technology, coding, and solving real-world problems through software. I also enjoy learning new tools and contributing to creative digital projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
+
